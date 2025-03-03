@@ -1,0 +1,67 @@
+<html>
+    <HEAD>
+        <TITLE>FORMA</TITLE>
+    </HEAD>
+    <BODY>
+        <h1>Форма</h1>
+        <p>Текстовое поле.</p>
+        <form>
+            <input name="fio" value="Марычев Даниэль Анатольевич" align="center" size="24" maxlength="35">
+        </form>
+        <form>
+            <p>Списки.</p>
+            <p>С единственным выбором:</p>
+            <select name="months_of_spring" size="/">
+                <option value="1">Март</option>
+                <option value="2">Апрель</option>
+                <option value="3">Май</option>
+            </select>
+            <p><br>С множественным выбором:</p>
+            <select name="food" size="4" multiple>
+                <option value="1" selected>Кофе</option>
+                <option value="2">Шоколад</option>
+                <option value="3">Ананас</option>
+                <option value="4">Шампанское</option>
+                <option value="5">Мороженое</option>
+                <option value="6">Шашлык</option>
+                <option value="7">Хот-дог</option>
+                <option value="8">Пицца</option>
+            </select>
+            <p><br>Checkbox</p>
+            <p><br>Укажите Ваши навыки:</p>
+                <input type="checkbox" name="skill" value="1" checked>Html<br>
+                <input type="checkbox" name="skill" value="2">JS<br>
+                <input type="checkbox" name="skill" value="3">APS<br>
+                <input type="checkbox" name="skill" value="4">Perl<br>
+                <input type="checkbox" name="skill" value="5">PHP<br>
+                <input type="checkbox" name="skill" value="6">XML<br>
+                <input type="checkbox" name="skill" value="7">FLASH<br>
+            <p><br>Radiobutton</p>
+                <input type="radio" name="skill" value="1" checked>HTML<br>
+                <input type="radio" name="skill" value="2">JavaScript<br>
+                <input type="radio" name="skill" value="3">ASP<br>
+                <input type="radio" name="skill" value="4">Perl<br>
+                <input type="radio" name="skill" value="5">PHP<br>
+                <input type="radio" name="skill" value="6">XML<br>
+                <input type="radio" name="skill" value="7">FLASH<br><br>
+            <textarea name="bio" cols="30" rows="6" wrap="">
+                Иванов Иван Иванович
+                12.02.2000
+                25 Лет
+            </textarea><br>
+            <p><br>Кнопка с картинкой</p>
+        <button name="melon" style="width:155; height: 150;" onclick="alert('Melon Musk');"><img src="melon.jpg" width="140" height="140"></button>
+        <button style="width: 155; height: 150;" onclick="alert('Brian Banana is calling you');"><img src="banan.jpg" width="140" height="140"></button><br>
+            <p><br>Скрытое поле</p>
+                <input type="hidden" value="Значение по умолчанию"><br>
+            <p>Поле со вставкой файла</p>    
+                <input type="file" size="50"><br><br>
+            <p>Поле для ввода пароля (password).</p>
+	            <input type="password" value="123456" size="6" maxlength="8">
+            <p>Кнопки.(button(ввод, сброс, дата))</p>    
+                <input type="submit" name="subm" value="Отправить данные"><br><br>
+                <input type="button" name="date" value="Показать сегодняшнее число" onclick="alert(Date());"><br><br>
+                <input type="reset" name="reset" value="Сбросить ввод"><br><br>
+    </form>
+    </BODY>
+</html>
