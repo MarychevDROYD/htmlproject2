@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input id="check"/>
+    <button type="button" onclick="myfunction()">check</button>
+    <p id="then">text</p>
+<script>
+    function myfunction(){
+        const input = document.getElementById("check").value;
+        let i = Number(input)
+        if (typeof i==="number"){
+            document.getElementById("then").innerHTML = i * 2
+        }
+    }
+</script>
+
+</body>
+</html>
